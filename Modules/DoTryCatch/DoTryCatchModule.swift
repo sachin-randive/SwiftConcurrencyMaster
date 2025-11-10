@@ -37,12 +37,10 @@ struct DoTryCatchModule: View {
     let message = "Hello, World!"
     var encryptedMessage: String {
         do {
-            return try encryptor.encrypt(message, password: "1234")
-        } catch EncryptionError.invalidPassword{
-            return "Encryption error: invalid Password"
-        } catch EncryptionError.weakPassword {
-            return "Encryption error: Weal Password"
-        } catch {
+            return try encryptor.encrypt(message, password: "123")
+        } catch let error as EncryptionError{
+            return "Encryption error: \(error)"
+        }  catch {
             return "An unknown error ocurred"
         }
       
