@@ -16,7 +16,7 @@ class AsyncAwaitViewModel: ObservableObject {
         Task {
             do {
                 isLoading = true
-                self.users = try await fetchUsers()
+                try await fetchUsers()
                 print("Succesful task completion..")
                 isLoading = false
             } catch {
@@ -25,7 +25,7 @@ class AsyncAwaitViewModel: ObservableObject {
         }
     }
     
-    func fetchUsers() async throws -> [User] {
+    func fetchUsers() async throws  {
         try await Task.sleep(nanoseconds: 2_000_000_000)
         let users: [User] = [
             .init(username: "Avi Shah", email: "avi@gmail.com", id: 1),
@@ -33,9 +33,7 @@ class AsyncAwaitViewModel: ObservableObject {
             .init(username: "Ketan Patil", email: "ketan@gmail.com", id: 3),
             .init(username: "Sachin Randive", email: "sachin@gmail.com", id: 4)
         ]
-        
-        return users
-        
+        self.users = users
     }
     
     func updateUserEmails() async {
@@ -49,7 +47,7 @@ class AsyncAwaitViewModel: ObservableObject {
         try? await Task.sleep(nanoseconds: 1_000_000_000)
 
         for user in users {
-            let newEmail = user.email.replacingOccurrences(of: "gmail", with: "appstuff")
+            let newEmail = user.email.replacingOccurrences(of: "gmail", with: "SwiftApp")
             let newUser = User(username: user.username, email: newEmail, id: user.id)
             result.append(newUser)
         }
