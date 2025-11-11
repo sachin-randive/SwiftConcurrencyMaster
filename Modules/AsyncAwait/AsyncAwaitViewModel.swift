@@ -6,34 +6,47 @@
 //
 
 import Foundation
+
 @MainActor
 class AsyncAwaitViewModel: ObservableObject {
     @Published var users = [User]()
     @Published var isUpdating: Bool = false
     @Published var isLoading = false
+    @Published var errorMessage: String?
+    
+    let services = AsyncAwaitServices()
     
     init() {
-        Task {
-            do {
-                isLoading = true
-                try await fetchUsers()
-                print("Succesful task completion..")
-                isLoading = false
-            } catch {
-                print("Error fetching users: \(error)")
-            }
+//        Task {
+//            await fetchUsers()
+//        }
+        
+        fetchDataWithCompletion()
+    }
+    
+    func fetchUsers() async  {
+        isLoading = true
+        defer {isLoading = false}
+        do {
+            self.users = try await services.fetchUsers()
+            print("Succesful task completion..")
+        } catch {
+            self.errorMessage = "An error ocurred"
+            print("Error fetching users: \(error)")
         }
     }
     
-    func fetchUsers() async throws  {
-        try await Task.sleep(nanoseconds: 2_000_000_000)
-        let users: [User] = [
-            .init(username: "Avi Shah", email: "avi@gmail.com", id: 1),
-            .init(username: "Vermala Raw", email: "vermala@gmail.com", id: 2),
-            .init(username: "Ketan Patil", email: "ketan@gmail.com", id: 3),
-            .init(username: "Sachin Randive", email: "sachin@gmail.com", id: 4)
-        ]
-        self.users = users
+    // completionHandler call
+    
+    func fetchDataWithCompletion() {
+        services.fetchUsersCompletionHandler { result in
+            switch result {
+            case .success(let users):
+                self.users = users
+            case .failure(let error):
+                self.errorMessage = "An error ocurred: \(error)"
+            }
+        }
     }
     
     func updateUserEmails() async {
@@ -45,15 +58,13 @@ class AsyncAwaitViewModel: ObservableObject {
         }
         
         try? await Task.sleep(nanoseconds: 1_000_000_000)
-
+        
         for user in users {
             let newEmail = user.email.replacingOccurrences(of: "gmail", with: "SwiftApp")
             let newUser = User(username: user.username, email: newEmail, id: user.id)
             result.append(newUser)
         }
-        
         isUpdating = false
-        
         self.users = result
     }
 }

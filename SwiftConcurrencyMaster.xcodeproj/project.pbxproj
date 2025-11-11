@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */; };
 		C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */; };
 		C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */; };
 		C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D4C2EC1C7E9002A71B8 /* DoTryCatchModule.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitServices.swift; sourceTree = "<group>"; };
 		C0E41D3A2EC1B64A002A71B8 /* SwiftConcurrencyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyMasterApp.swift; sourceTree = "<group>"; };
 		C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				C0E41D512EC1F123002A71B8 /* AsyncAwaitModule.swift */,
 				C0E41D532EC1F1EC002A71B8 /* AsyncAwaitViewModel.swift */,
+				C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */,
 			);
 			path = AsyncAwait;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */,
 				C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */,
+				C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */,
 				C0E41D582EC1F291002A71B8 /* User.swift in Sources */,
 				C0E41D542EC1F1EC002A71B8 /* AsyncAwaitViewModel.swift in Sources */,
 				C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */,
