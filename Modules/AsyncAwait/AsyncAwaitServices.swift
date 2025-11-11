@@ -10,7 +10,7 @@ import Foundation
 class AsyncAwaitServices {
     func fetchUsers() async throws -> [User] {
         try await Task.sleep(nanoseconds: 2_000_000_000)
-        let throwError = Bool.random()
+        let throwError = false  //Bool.random()
         if throwError {
             throw URLError(.badURL)
         } else {
@@ -20,6 +20,7 @@ class AsyncAwaitServices {
                 .init(username: "Ketan Patil", email: "ketan@gmail.com", id: 3),
                 .init(username: "Sachin Randive", email: "sachin@gmail.com", id: 4)
             ]
+            print("successfully fetched users")
             return users
         }
     }

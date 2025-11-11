@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B6BCF72EC318F5007BFB48 /* TasksModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6BCF62EC318F5007BFB48 /* TasksModule.swift */; };
 		C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */; };
 		C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */; };
 		C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0B6BCF62EC318F5007BFB48 /* TasksModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModule.swift; sourceTree = "<group>"; };
 		C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitServices.swift; sourceTree = "<group>"; };
 		C0E41D3A2EC1B64A002A71B8 /* SwiftConcurrencyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyMasterApp.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0B6BCF52EC31799007BFB48 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B6BCF62EC318F5007BFB48 /* TasksModule.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
 		C0E41D312EC1B64A002A71B8 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 			children = (
 				C0E41D4B2EC1C7C1002A71B8 /* DoTryCatch */,
 				C0E41D502EC1F0F1002A71B8 /* AsyncAwait */,
+				C0B6BCF52EC31799007BFB48 /* Tasks */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B6BCF72EC318F5007BFB48 /* TasksModule.swift in Sources */,
 				C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */,
 				C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */,
 				C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */,

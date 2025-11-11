@@ -29,7 +29,7 @@ class AsyncAwaitViewModel: ObservableObject {
         defer {isLoading = false}
         do {
             self.users = try await services.fetchUsers()
-            print("Succesful task completion..")
+            print("Task completed..")
         } catch {
             self.errorMessage = "An error ocurred"
             print("Error fetching users: \(error)")
