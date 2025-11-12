@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftConcurrencyMasterApp: App {
     var body: some Scene {
         WindowGroup {
-            TasksModule()
+            AsyncLetModule()
         }
     }
 }
