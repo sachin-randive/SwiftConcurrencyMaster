@@ -11,6 +11,11 @@
 		C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */; };
 		C0D15D5B2EC450E7004AA464 /* AsyncLetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D5A2EC450E7004AA464 /* AsyncLetModule.swift */; };
 		C0D15D5D2EC45910004AA464 /* ImageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D5C2EC45910004AA464 /* ImageModule.swift */; };
+		C0D15D662EC488EC004AA464 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D652EC488EC004AA464 /* Product.swift */; };
+		C0D15D682EC489B8004AA464 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D672EC489B8004AA464 /* ProductViewModel.swift */; };
+		C0D15D6A2EC489EE004AA464 /* ProductServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D692EC489EE004AA464 /* ProductServices.swift */; };
+		C0D15D6C2EC490D4004AA464 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D6B2EC490D4004AA464 /* UserViewModel.swift */; };
+		C0D15D6E2EC490F2004AA464 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D6D2EC490F2004AA464 /* UserServices.swift */; };
 		C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */; };
 		C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */; };
 		C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D4C2EC1C7E9002A71B8 /* DoTryCatchModule.swift */; };
@@ -24,6 +29,11 @@
 		C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitServices.swift; sourceTree = "<group>"; };
 		C0D15D5A2EC450E7004AA464 /* AsyncLetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetModule.swift; sourceTree = "<group>"; };
 		C0D15D5C2EC45910004AA464 /* ImageModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModule.swift; sourceTree = "<group>"; };
+		C0D15D652EC488EC004AA464 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C0D15D672EC489B8004AA464 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		C0D15D692EC489EE004AA464 /* ProductServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServices.swift; sourceTree = "<group>"; };
+		C0D15D6B2EC490D4004AA464 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C0D15D6D2EC490F2004AA464 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		C0E41D3A2EC1B64A002A71B8 /* SwiftConcurrencyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyMasterApp.swift; sourceTree = "<group>"; };
 		C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +84,66 @@
 				C0D15D5A2EC450E7004AA464 /* AsyncLetModule.swift */,
 			);
 			path = AsyncLet;
+			sourceTree = "<group>";
+		};
+		C0D15D5E2EC48875004AA464 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				C0E41D562EC1F27C002A71B8 /* Model */,
+				C0D15D5F2EC48884004AA464 /* ViewModel */,
+				C0D15D602EC4888B004AA464 /* Services */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		C0D15D5F2EC48884004AA464 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D6B2EC490D4004AA464 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C0D15D602EC4888B004AA464 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D6D2EC490F2004AA464 /* UserServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C0D15D612EC48894004AA464 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D622EC488A1004AA464 /* Model */,
+				C0D15D632EC488AC004AA464 /* ViewModel */,
+				C0D15D642EC488B2004AA464 /* Services */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		C0D15D622EC488A1004AA464 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D652EC488EC004AA464 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0D15D632EC488AC004AA464 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D672EC489B8004AA464 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C0D15D642EC488B2004AA464 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D692EC489EE004AA464 /* ProductServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C0E41D312EC1B64A002A71B8 = {
@@ -145,7 +215,8 @@
 		C0E41D552EC1F275002A71B8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				C0E41D562EC1F27C002A71B8 /* Model */,
+				C0D15D5E2EC48875004AA464 /* Users */,
+				C0D15D612EC48894004AA464 /* Product */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -234,9 +305,14 @@
 			files = (
 				C0D15D5B2EC450E7004AA464 /* AsyncLetModule.swift in Sources */,
 				C0B6BCF72EC318F5007BFB48 /* TasksModule.swift in Sources */,
+				C0D15D682EC489B8004AA464 /* ProductViewModel.swift in Sources */,
 				C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */,
 				C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */,
+				C0D15D6C2EC490D4004AA464 /* UserViewModel.swift in Sources */,
 				C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */,
+				C0D15D6E2EC490F2004AA464 /* UserServices.swift in Sources */,
+				C0D15D662EC488EC004AA464 /* Product.swift in Sources */,
+				C0D15D6A2EC489EE004AA464 /* ProductServices.swift in Sources */,
 				C0E41D582EC1F291002A71B8 /* User.swift in Sources */,
 				C0E41D542EC1F1EC002A71B8 /* AsyncAwaitViewModel.swift in Sources */,
 				C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */,
