@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+@MainActor
 class UserViewModel: ObservableObject {
     @Published var user = [User]()
     private let userService: UserServices

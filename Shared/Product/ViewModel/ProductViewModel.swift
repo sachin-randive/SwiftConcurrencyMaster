@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+@MainActor
 class ProductViewModel: ObservableObject {
     @Published var products = [Product]()
     private let productService: ProductServices

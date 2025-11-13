@@ -16,6 +16,7 @@
 		C0D15D6A2EC489EE004AA464 /* ProductServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D692EC489EE004AA464 /* ProductServices.swift */; };
 		C0D15D6C2EC490D4004AA464 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D6B2EC490D4004AA464 /* UserViewModel.swift */; };
 		C0D15D6E2EC490F2004AA464 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D6D2EC490F2004AA464 /* UserServices.swift */; };
+		C0D15D712EC4CDF0004AA464 /* TaskGroupModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D702EC4CDF0004AA464 /* TaskGroupModule.swift */; };
 		C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */; };
 		C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */; };
 		C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E41D4C2EC1C7E9002A71B8 /* DoTryCatchModule.swift */; };
@@ -34,6 +35,7 @@
 		C0D15D692EC489EE004AA464 /* ProductServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServices.swift; sourceTree = "<group>"; };
 		C0D15D6B2EC490D4004AA464 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C0D15D6D2EC490F2004AA464 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		C0D15D702EC4CDF0004AA464 /* TaskGroupModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupModule.swift; sourceTree = "<group>"; };
 		C0E41D3A2EC1B64A002A71B8 /* SwiftConcurrencyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E41D3D2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyMasterApp.swift; sourceTree = "<group>"; };
 		C0E41D3F2EC1B64A002A71B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C0D15D6F2EC4C7EA004AA464 /* TaskGroup */ = {
+			isa = PBXGroup;
+			children = (
+				C0D15D702EC4CDF0004AA464 /* TaskGroupModule.swift */,
+			);
+			path = TaskGroup;
+			sourceTree = "<group>";
+		};
 		C0E41D312EC1B64A002A71B8 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 				C0B6BCF52EC31799007BFB48 /* Tasks */,
 				C0B6BCF82EC341D2007BFB48 /* ImagesDownload */,
 				C0D15D592EC450D4004AA464 /* AsyncLet */,
+				C0D15D6F2EC4C7EA004AA464 /* TaskGroup */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -309,6 +320,7 @@
 				C0E41D4D2EC1C7E9002A71B8 /* DoTryCatchModule.swift in Sources */,
 				C0E41D402EC1B64A002A71B8 /* ContentView.swift in Sources */,
 				C0D15D6C2EC490D4004AA464 /* UserViewModel.swift in Sources */,
+				C0D15D712EC4CDF0004AA464 /* TaskGroupModule.swift in Sources */,
 				C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */,
 				C0D15D6E2EC490F2004AA464 /* UserServices.swift in Sources */,
 				C0D15D662EC488EC004AA464 /* Product.swift in Sources */,

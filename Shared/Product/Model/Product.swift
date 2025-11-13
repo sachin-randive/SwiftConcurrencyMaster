@@ -13,4 +13,6 @@ struct Product: Codable, Identifiable {
     let price: Double
     let description: String
     let image: String
+    
+    var productOwner: User?
 }
