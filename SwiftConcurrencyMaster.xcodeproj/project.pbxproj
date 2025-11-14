@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C0B6BCF72EC318F5007BFB48 /* TasksModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6BCF62EC318F5007BFB48 /* TasksModule.swift */; };
+		C0B820292EC73A0900ECF6CD /* RefreshableModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B820282EC73A0900ECF6CD /* RefreshableModule.swift */; };
 		C0C4A2B12EC24AB400BFE010 /* AsyncAwaitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */; };
 		C0D15D5B2EC450E7004AA464 /* AsyncLetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D5A2EC450E7004AA464 /* AsyncLetModule.swift */; };
 		C0D15D5D2EC45910004AA464 /* ImageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D15D5C2EC45910004AA464 /* ImageModule.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		C0B6BCF62EC318F5007BFB48 /* TasksModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModule.swift; sourceTree = "<group>"; };
+		C0B820282EC73A0900ECF6CD /* RefreshableModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableModule.swift; sourceTree = "<group>"; };
 		C0C4A2B02EC24AB400BFE010 /* AsyncAwaitServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitServices.swift; sourceTree = "<group>"; };
 		C0D15D5A2EC450E7004AA464 /* AsyncLetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetModule.swift; sourceTree = "<group>"; };
 		C0D15D5C2EC45910004AA464 /* ImageModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModule.swift; sourceTree = "<group>"; };
@@ -78,6 +80,21 @@
 				C0D15D5C2EC45910004AA464 /* ImageModule.swift */,
 			);
 			path = ImagesDownload;
+			sourceTree = "<group>";
+		};
+		C0B820272EC739EB00ECF6CD /* Refreshable */ = {
+			isa = PBXGroup;
+			children = (
+				C0B820282EC73A0900ECF6CD /* RefreshableModule.swift */,
+			);
+			path = Refreshable;
+			sourceTree = "<group>";
+		};
+		C0B8202A2EC73BFD00ECF6CD /* AsyncStream */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AsyncStream;
 			sourceTree = "<group>";
 		};
 		C0D15D592EC450D4004AA464 /* AsyncLet */ = {
@@ -201,6 +218,8 @@
 				C0B6BCF82EC341D2007BFB48 /* ImagesDownload */,
 				C0D15D592EC450D4004AA464 /* AsyncLet */,
 				C0D15D6F2EC4C7EA004AA464 /* TaskGroup */,
+				C0B820272EC739EB00ECF6CD /* Refreshable */,
+				C0B8202A2EC73BFD00ECF6CD /* AsyncStream */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -330,6 +349,7 @@
 				C0E41D3E2EC1B64A002A71B8 /* SwiftConcurrencyMasterApp.swift in Sources */,
 				C0E41D522EC1F123002A71B8 /* AsyncAwaitModule.swift in Sources */,
 				C0D15D5D2EC45910004AA464 /* ImageModule.swift in Sources */,
+				C0B820292EC73A0900ECF6CD /* RefreshableModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
